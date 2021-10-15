@@ -1,0 +1,23 @@
+:root{
+    --first-color:#ccc;
+    --IndianRed:#CD5C5C;
+    --LightSalmon:#FFA07A;
+}
+
+body{
+    background-color: var(--first-color);    
+       
+}
+.flex-container{
+    background-color: var(--LightSalmon);
+    height: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.flex-item{
+    background-color:var(--IndianRed); 
+    width: 20vw;
+    height: 10vh;
+    
+}
