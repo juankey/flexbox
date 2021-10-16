@@ -1,11 +1,12 @@
 :root{
-    --first-color:#ccc;
-    --IndianRed:#CD5C5C;
-    --LightSalmon:#FFA07A;
-}
+    --darkgreen:#1D411B;
+    --dark2green:#2D6F28;
+    --green:#2D6F28;
+    --lightgreen:#4AED42;
+    --limon:#BCED43;
 
-body{
-    
+}
+body{    
     margin: 0;
     padding: 0;
 }
