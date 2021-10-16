@@ -1,12 +1,46 @@
+/* reseteo general */
 :root{
     --darkgreen:#1D411B;
     --dark2green:#2D6F28;
     --green:#2D6F28;
     --lightgreen:#4AED42;
     --limon:#BCED43;
-
+    --Chestnut:#eee;
+}
+html{
+    box-sizing: border-box;
+    font-size: 16px;
 }
 body{    
     margin: 0;
     padding: 0;
+}
+img{
+    max-height: 100%;
+}
+.container-universal{
+    background:var(--Chestnut);
+    display: grid;     
+}
+
+/* for mobile */
+
+.flex-container{    
+    display: grid;
+    /* grid-template-rows: repeat(2,1fr);  */
+    grid-template-columns: 1fr;   
+}
+.teory-flexbox, .properties{
+    
+    background-color: #333;
+}
+.terminology, .prefixing-flexbox{
+    background-color: #666;
+    
+}
+.teory-flexbox{
+    grid: 1/2;
+}
+.properties{
+    grid: 2/3;
 }

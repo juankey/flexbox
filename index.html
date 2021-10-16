@@ -94,7 +94,7 @@
                         <li class="item-child-properties">wrap: flex items will wrap onto multiple lines, from top to bottom.</li>
                         <li class="item-child-properties">wrap-reverse: flex items will wrap onto multiple lines from bottom to top.</li>
                     </ul>
-                    <p>There are some <a href="">visual demos of flex-wrap here.</a></p>
+                    <p>There are some <a href="#">visual demos of flex-wrap here.</a></p>
                 </section>
                 <section class="item-properties">
                     <h4>flex-flow</h4>
@@ -135,7 +135,7 @@
                 </section>
                 <section class="item-properties">
                     <h4>align-items</h4>
-                    <div><img src="https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg" alt=""></div>
+                    <figure><img src="https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg" alt=""></figure>
                     <p>This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).</p>
                     <pre>
                         <code>
@@ -155,7 +155,7 @@
                 </section>
                 <section class="item-properties">
                     <h4>align-content</h4>
-                    <div><img src="https://css-tricks.com/wp-content/uploads/2018/10/align-content.svg" alt=""></div>
+                    <figure><img src="https://css-tricks.com/wp-content/uploads/2018/10/align-content.svg" alt=""></figure>
                     <p>This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.</p>
                     <div>
                         <div class="box-properties">hey!</div>
@@ -201,12 +201,12 @@
                 </section>
             </article>
             <article class="properties-column">
-                <div><img src="https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg" alt=""></div>
+                <figure><img src="https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg" alt=""></figure>
                 <h2>Properties for the Children<br>
                     (flex items)</h2>
                 <section class="item-properties">
                     <h2>orden</h2>
-                    <div><img src="https://css-tricks.com/wp-content/uploads/2018/10/order.svg" alt=""></div>
+                    <figure><img src="https://css-tricks.com/wp-content/uploads/2018/10/order.svg" alt=""></figure>
                     <p>By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.</p>
                     <pre>
                         <code>
@@ -219,7 +219,7 @@
                 </section>
                 <section class="item-properties">
                     <h4>flex-grow</h4>
-                    <div><img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-grow.svg" alt=""></div>
+                    <figure><img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-grow.svg" alt=""></figure>
                     <p>This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
                     <p>If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at least).</p>
                     <pre>
@@ -273,7 +273,7 @@
                     <h4>
                         align-self
                     </h4>
-                    <div><img src="https://css-tricks.com/wp-content/uploads/2018/10/align-self.svg" alt=""></div>
+                    <figure><img src="https://css-tricks.com/wp-content/uploads/2018/10/align-self.svg" alt=""></figure>
                     <p>This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.</p>
                     <p>Please see the align-items explanation to understand the available values.</p>
                     <pre>
@@ -287,7 +287,7 @@
                 </section>
             </article>
         </section>
-        <section class="Prefixing Flexbox"> 
+        <section class="prefixing-flexbox"> 
             <h2>Prefixing Flexbox</h2>
             <p>Flexbox requires some vendor prefixing to support the most browsers possible. It doesn’t just include prepending properties with the vendor prefix, but there are actually entirely different property and value names. This is because the Flexbox spec has changed over time, creating an “old”, “tweener”, and “new” versions.</p>
             <p>Perhaps the best way to handle this is to write in the new (and final) syntax and run your CSS through Autoprefixer, which handles the fallbacks very well.</p>
