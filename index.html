@@ -15,16 +15,12 @@
         <div class="item-menu"><a href="#">ejercicios</a></div>   
     </nav>
     <main class="flex-container">
-
         <section class="teory-flexbox">
-            <h2> teory of flexbox</h2>
-              
-             <p> " The Flexbox Layout (Flexible Box) module (<a href="https://www.w3.org/TR/css-flexbox/" target="_blank"> a W3C Candidate Recommendation</a> as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p> 
-                 <p> The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow. </p> 
-
+            <h2> teory of flexbox</h2>              
+            <p> " The Flexbox Layout (Flexible Box) module (<a href="https://www.w3.org/TR/css-flexbox/" target="_blank"> a W3C Candidate Recommendation</a> as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p> 
+            <p> The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow. </p> 
             <p> Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p> 
-
-         <p> Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts."</p> 
+            <p> Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts."</p> 
          <q><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#background" target="_blank">cris coyier "a complete guide to flebox"</a></q>
         </section>  
         <section class="terminology">
@@ -53,8 +49,8 @@
                     <p>This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.</p>
                     <pre>
                         <code>
-                            .container {
-                                display: flex; /* or inline-flex */
+    .container {
+     display: flex; /* or inline-flex */
                               }
                         </code>
                     </pre>
@@ -66,9 +62,9 @@
                     <p>This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.</p>
                     <pre>
                         <code>
-                            .container {
-                                flex-direction: row | row-reverse | column | column-reverse;
-                              }
+    .container {
+    flex-direction: row | row-reverse | column | column-reverse;
+                }
                         </code>
                     </pre>
                     <ul>
@@ -84,8 +80,8 @@
                     <p>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.</p>
                     <pre>
                         <code>
-                            .container {
-                                flex-wrap: nowrap | wrap | wrap-reverse;
+    .container {
+        flex-wrap: nowrap | wrap | wrap-reverse;
                               }
                         </code>
                     </pre>
@@ -101,8 +97,8 @@
                     <p>This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. The default value is row nowrap.</p>
                     <pre>
                         <code>
-                            .container {
-                                flex-flow: column wrap;
+    .container {
+        flex-flow: column wrap;
                               }
                         </code>
                     </pre>
@@ -113,9 +109,9 @@
                     <p>This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</p>
                     <pre>
                         <code>
-                            .container {
-                                justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
-                              }
+    .container {
+        justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+            }
                         </code>
                     </pre>
                     <ul>
@@ -139,9 +135,9 @@
                     <p>This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).</p>
                     <pre>
                         <code>
-                            .container {
-                                align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
-                              } 
+    .container {
+        align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+                } 
                         </code>
                     </pre>
                     <ul>
@@ -163,9 +159,9 @@
                     </div>
                     <pre>
                         <code>
-                            .container {
-                                align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
-                              }
+    .container {
+        align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+                }
                         </code>
                     </pre>
                     <ul>
@@ -186,15 +182,15 @@
                     <p><a href="https://css-tricks.com/almanac/properties/g/gap/">The gap property</a> explicitly controls the space between flex items. It applies that spacing only between items not on the outer edges. </p>
                     <pre>
                         <code>
-                            .container {
-                                display: flex;
-                                ...
-                                gap: 10px;
-                                gap: 10px 20px; /* row-gap column gap */
-                                row-gap: 10px;
-                                column-gap: 20px;
-                              }
-                        </code>
+    .container {
+        display: flex;
+        ...
+        gap: 10px;
+        gap: 10px 20px; /* row-gap column gap */
+        row-gap: 10px;
+        column-gap: 20px;
+        }
+                                </code>
                     </pre>
                     <p>The behavior could be thought of as a minimum gutter, as if the gutter is bigger somehow (because of something like justify-content: space-between;) then the gap will only take effect if that space would end up smaller.</p>
                     <p>It is not exclusively for flexbox, gap works in grid and multi-column layout as well. </p>
@@ -210,9 +206,9 @@
                     <p>By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.</p>
                     <pre>
                         <code>
-                            .item {
-                                order: 5; /* default is 0 */
-                              }
+    .item {
+        order: 5; /* default is 0 */
+        }
                         </code>
                     </pre>
                     <p>Items with the same order revert to source order.</p>
@@ -224,9 +220,9 @@
                     <p>If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at least).</p>
                     <pre>
                         <code>
-                            .item {
-                                flex-grow: 4; /* default 0 */
-                              }
+    .item {
+        flex-grow: 4; /* default 0 */
+          }
                         </code>
                     </pre>
                     <p>Negative numbers are invalid.</p>
@@ -262,9 +258,9 @@
                     <p>This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. The default is 0 1 auto, but if you set it with a single number value, it’s like 1 0.</p>
                     <pre>
                         <code>
-                            .item {
-                                flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
-                              }
+    item {
+        flex: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]
+         }
                         </code>
                     </pre>
                     <p><strong> It is recommended that you use this shorthand property </strong>rather than set the individual properties. The shorthand sets the other values intelligently.</p>
@@ -278,9 +274,9 @@
                     <p>Please see the align-items explanation to understand the available values.</p>
                     <pre>
                         <code>
-                            .item {
-                                align-self: auto | flex-start | flex-end | center | baseline | stretch;
-                              }
+    .item {
+        align-self: auto | flex-start | flex-end | center | baseline | stretch;
+            }
                         </code>
                     </pre>
                     <p>Note that float, clear and vertical-align have no effect on a flex item.</p>
@@ -294,40 +290,28 @@
             <p>Alternatively, here’s a Sass @mixin to help with some of the prefixing, which also gives you an idea of what kind of things need to be done:</p>
             <pre>
                 <code>
-                    @mixin flexbox() {
-                        display: -webkit-box;
-                        display: -moz-box;
-                        display: -ms-flexbox;
-                        display: -webkit-flex;
-                        display: flex;
+    @mixin flexbox() {
+        display: flex;
                       }
                       
-                      @mixin flex($values) {
-                        -webkit-box-flex: $values;
-                        -moz-box-flex:  $values;
-                        -webkit-flex:  $values;
-                        -ms-flex:  $values;
-                        flex:  $values;
-                      }
+    @mixin flex($values) {
+        flex:  $values;
+                }
                       
-                      @mixin order($val) {
-                        -webkit-box-ordinal-group: $val;  
-                        -moz-box-ordinal-group: $val;     
-                        -ms-flex-order: $val;     
-                        -webkit-order: $val;  
-                        order: $val;
-                      }
+    @mixin order($val) {
+        order: $val;
+                }
                       
-                      .wrapper {
-                        @include flexbox();
-                      }
+        .wrapper {
+            @include flexbox();
+                }
                       
-                      .item {
-                        @include flex(1 200px);
-                        @include order(2);
-                      }
-                </code>
-            </pre>
+            .item {
+                @include flex(1 200px);
+                @include order(2);
+                  }
+            </code>
+        </pre>
         </section>        
     </main>
     <footer class="footer">
