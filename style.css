@@ -36,18 +36,12 @@ img{
 /* for mobile */
 
 .flex-container{ 
-    margin: auto;     
-    width: 100%;  
+    margin: auto;
+    width: 95%;  
     display: grid;    
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr;
 }
- .teory-flexbox, .properties{
-    
-    background-color: #333;
-}
-.terminology, .prefixing-flexbox{
-    background-color: #666;    
-}
+
 .teory-flexbox{
     grid: 1/2;
 }
