@@ -15,7 +15,7 @@ html{
     box-sizing: border-box;    
 }
 pre{    
-    display: none;
+    
         margin: 0;
         border: 1px solid green;
         white-space: pre-wrap;     
