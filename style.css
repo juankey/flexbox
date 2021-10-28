@@ -37,14 +37,7 @@ img{
 
 .flex-container{ 
     margin: auto;
-    width: 95%;  
-    display: grid;    
-    grid-template-columns: 1fr;
-}
+    width: 90vw;  
+    display: grid;   
 
-.teory-flexbox{
-    grid: 1/2;
-}
-.properties{
-    grid: 2/3;
 }
