@@ -8,8 +8,11 @@
     --Chestnut:#eee;
 }
 html{
-    
-    font-size: 16px;
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+h1,h2,h3{
+    background-color: var(--dark2green);
 }
 *,*::after,*::before{
     box-sizing: border-box;    
@@ -29,7 +32,15 @@ body{
 img{
     max-width: 100%;
 }
-.container-universal{
+.cabecera{
+    margin:auto;
+    position:sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+.container-universal{    
     background:var(--Chestnut);        
 }
 
@@ -39,5 +50,5 @@ img{
     margin: auto;
     width: 90vw;  
     display: grid;   
-
+    
 }
