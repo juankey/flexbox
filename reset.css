@@ -1,0 +1,23 @@
+:root{
+    --darkgreen:#1D411B;
+    --dark2green:#2D6F28;
+    --green:#2D6F28;
+    --lightgreen:#4AED42;
+    --limon:#BCED43;
+    --Chestnut:#eee;
+    --color-menu:#fff;
+}
+html{
+    margin:0;
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+a{
+   text-decoration: none;
+}
