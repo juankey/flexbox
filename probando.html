@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>probando flexbox</title>
+    <style>
+        main *{
+            box-sizing: border-box;
+        }
+        main {
+            box-sizing: border-box;           
+            width: 100%;           
+            display: flex; 
+            flex-direction: column;           
+            justify-content: center;
+            align-items: center;
+        }
+        .flex-direction{
+            border: 1rem solid white;
+            background-color: peru;
+            width: 70vw;
+            height: 50vh;
+            display: flex;            
+            justify-content: space-around;
+        }
+        .item{
+            background-color: blueviolet;
+            border: 1px solid black;
+        }
+        .flex-direction:nth-child(2){
+            justify-content: space-between;
+        }
+        .flex-direction:nth-child(3){
+            justify-content: space-evenly;
+        }
+        .flex-direction:nth-child(4){
+            justify-content: start;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="flex-direction">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+        </div>
+        <div class="flex-direction">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+        </div>
+        <div class="flex-direction">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+        </div>
+        <div class="flex-direction">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+        </div>
+    </main>
+</body>
+</html>
